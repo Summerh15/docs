@@ -3,6 +3,11 @@
 /** @type {import('@docusaurus/plugin-client-redirects').PluginOptions} */
 const redirectsOptions = {
     redirects: [
+        // #200 Restructure docs
+        {
+            to: '/adrs',
+            from: ['/adrs/0000-architectural-decision-records', '/adrs/template'],
+        },
         {
             to: '/general/manage-tokens/how-to-transfer-rose-into-paratime',
             from: [
@@ -10,10 +15,32 @@ const redirectsOptions = {
                 '/general/manage-tokens/how-to-transfer-rose-into-evm-paratime', // #200 Restructure docs
             ],
         },
-        // #200 Restructure docs
         {
-            to: '/adrs',
-            from: ['/adrs/0000-architectural-decision-records', '/adrs/template'],
+            to: '/general/manage-tokens/cli',
+            from: [
+                '/general/manage-tokens/advanced/oasis-cli-tools/', // #399 Replace oasis-node with Oasis CLI
+            ],
+        },
+        {
+            to: '/core/oasis-node/cli',
+            from: [
+                '/general/manage-tokens/advanced/oasis-cli-tools/prerequisites', // #399 Replace oasis-node with Oasis CLI
+                '/general/manage-tokens/advanced/oasis-cli-tools/setup', // #399 Replace oasis-node with Oasis CLI
+/*
+            'general/manage-tokens/advanced/file-based-signer',
+    'general/manage-tokens/advanced/oasis-cli-tools/prerequisites',
+    'general/manage-tokens/advanced/oasis-cli-tools/setup',
+    'general/manage-tokens/advanced/oasis-cli-tools/common-staking-info',
+    'general/manage-tokens/advanced/oasis-cli-tools/list-accounts',
+    'general/manage-tokens/advanced/oasis-cli-tools/get-account-info',
+    'general/manage-tokens/advanced/oasis-cli-tools/get-account-nonce',
+    'general/manage-tokens/advanced/oasis-cli-tools/address',
+    'general/manage-tokens/advanced/oasis-cli-tools/transfer-tokens',
+    'general/manage-tokens/advanced/oasis-cli-tools/delegate-tokens',
+    'general/manage-tokens/advanced/oasis-cli-tools/reclaim-tokens',
+    'general/manage-tokens/advanced/oasis-cli-tools/deposit-withdraw-tokens-to-from-paratime',
+    'general/manage-tokens/advanced/oasis-cli-tools/gas-costs',*/
+            ],
         },
         {
             to: '/get-involved/',
@@ -51,14 +78,14 @@ const redirectsOptions = {
             to: '/dapp/cipher/',
             from: '/oasis-sdk/contract/getting-started',
         },
-	{
+        {
             to: '/dapp/sapphire/',
             from: '/general/developer-resources/sapphire-paratime',
-	},
-	{
+        },
+        {
             to: '/dapp/sapphire/quickstart',
             from: ['/general/developer-resources/sapphire-paratime/writing-dapps-on-sapphire', '/dapp/sapphire/writing-dapps-on-sapphire'], // #218 Add sapphire tutorial
-	},
+        },
         {
             to: '/general/oasis-network/faq',
             from: '/general/faq/oasis-network-faq',
