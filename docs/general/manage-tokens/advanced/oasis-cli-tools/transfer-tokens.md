@@ -82,7 +82,8 @@ Escrow Account:
   ...
 ```
 
-We can observe that both, the general account and the escrow account (actively bounded and debonding), have a balance of 0 tokens.
+We can observe that both, the general account and the escrow account (actively
+bounded and debonding), have a balance of 0 tokens.
 
 ## Generate a Transfer Transaction
 

@@ -70,6 +70,10 @@ const sidebars = {
             id: 'general/manage-tokens/cli/README',
           },
           items: [
+            'general/manage-tokens/cli/setup',
+            'general/manage-tokens/cli/wallet',
+            'general/manage-tokens/cli/accounts',
+            'general/manage-tokens/advanced/README',
             'general/manage-tokens/advanced/oasis-cli-tools/prerequisites',
             'general/manage-tokens/advanced/oasis-cli-tools/setup',
             'general/manage-tokens/advanced/oasis-cli-tools/common-staking-info',
@@ -80,7 +84,6 @@ const sidebars = {
             'general/manage-tokens/advanced/oasis-cli-tools/transfer-tokens',
             'general/manage-tokens/advanced/oasis-cli-tools/delegate-tokens',
             'general/manage-tokens/advanced/oasis-cli-tools/reclaim-tokens',
-            'general/manage-tokens/advanced/oasis-cli-tools/deposit-withdraw-tokens-to-from-paratime',
             'general/manage-tokens/advanced/oasis-cli-tools/gas-costs',
           ]
         },

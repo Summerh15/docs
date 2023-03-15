@@ -1,35 +1,13 @@
 import DocCard from '@theme/DocCard';
 import {findSidebarItem} from '@site/src/sidebarUtils';
 
-# Deposit/Withdraw Tokens to/from ParaTime
+# Account transactions
 
-To perform ParaTime deposits or withdrawals using a command line interface, you will need `oasis` executable which is part of the [Oasis CLI](https://github.com/oasisprotocol/oasis-sdk/tree/main/cli). `oasis` is supplemental to `oasis-node` and supports ParaTime-related operations such as deposits, withdrawals, transfers and manipulation of the smart contracts, in contrast to `oasis-node` which only supports consensus layer features.
+## Transfer
 
-We will assume that your already have an Oasis wallet with some ROSE and that you want to Deposit or Withdraw ROSE to or from Emerald ParaTime running on the Mainnet network.
+TODO
 
-:::info
-
-At time of writing, no precompiled `oasis` binaries are available. You will need to clone the [`oasis-sdk` git repository](https://github.com/oasisprotocol/oasis-sdk/) and compile the tool yourself. The process is straight forward - just follow the [Readme](https://github.com/oasisprotocol/oasis-sdk/blob/main/cli/README.md).
-
-:::
-
-:::info
-
-This chapter describes the command line interface for depositing and withdrawing ROSE which is tailored toward advanced users such as node operators. If you are interested in the end-user wallets with a graphical user interface, consult the [How to Transfer ROSE into a ParaTime](../../how-to-transfer-rose-into-paratime.mdx) chapter.
-
-:::
-
-## Import your wallet
-
-To sign any transaction you will need to import an Oasis wallet. Prepare your base64-encoded private key or the BIP39 mnemonic of your Oasis account and run:
-
-```
-oasis wallet import <SOME_WALLET_NAME>
-```
-
-Follow the interactive instructions that will guide you through the import procedure. If this is the first time you are running `oasis`, the imported wallet will become your default wallet and transactions will be signed with the key stored in this wallet, if not otherwise specified with the `--wallet` parameter.
-
-## Configure Allowance
+## Allowance
 
 In order to deposit ROSE to a ParaTime, you will first need to grant the ParaTime access to your Oasis account on the consensus layer. The following command allows Emerald to access up to 100 ROSE stored on your Oasis account which you will deposit afterwards:
 

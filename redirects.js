@@ -22,6 +22,12 @@ const redirectsOptions = {
             ],
         },
         {
+            to: '/general/manage-tokens/cli/deposit-withdraw',
+            from: [
+                '/general/manage-tokens/advanced/oasis-cli-tools/deposit-withdraw-tokens-to-from-paratime', // #399 Replace oasis-node with Oasis CLI
+            ],
+        },
+        {
             to: '/core/oasis-node/cli',
             from: [
                 '/general/manage-tokens/advanced/oasis-cli-tools/prerequisites', // #399 Replace oasis-node with Oasis CLI

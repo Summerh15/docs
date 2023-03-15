@@ -11,10 +11,7 @@ To run a command that requires a connection to an online Oasis node (i.e. the `s
 
 Here are some examples of Oasis Node CLI commands that need a connection to an online Oasis node:
 
-* `oasis-node stake info`: Shows general staking information.
-* `oasis-node stake list`: Lists all accounts with positive balance.
-* `oasis-node stake account info`: Shows detailed information for an account.
-* `oasis-node consensus submit_tx`: Submits a pre-generated transaction to the network.
+
 
 ## Local commands
 
